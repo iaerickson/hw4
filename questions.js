@@ -20,7 +20,7 @@ var questions = [
 // 1. Take Title and put it into an <h2> tag
 // 2. Take choices and assign them to 4 different buttons
 // 3. Assign booleans to the buttons, where "answer" from questions gets "true"
-//
+// 4. Set Timer Variable with countdown that puts on page
 
 //This sets the number/order of questions provided
 for (var i = 0; i < questions.length; i++) {
@@ -31,16 +31,22 @@ function quizFormatter(question) {
   //.appendChild()
   //Take title form object and put it as h2 on page
   console.log(question.title);
+  var questionPrompt = document.createElement("h2");
+  questionPrompt.innerHTML = question.title;
 
   //take choice and set them to buttons with booleans
   //for loop with array
   //.appendChild() the buttons to page
   console.log(question.choices);
-
+  var button = document.createElement("button");
+  var body = document.getElementById("#choices");
+  for (var k = 0; k < question.choices.length; k++) {
+    button.innerHTML = question.choices[i];
+  }
   //take answer and check with button from choices
   //set booleans
   //set onClick on each button
-  console.logn(question.answer);
+  console.log(question.answer);
 }
 
 // B) Function that checks for user's choice and if it's correct
