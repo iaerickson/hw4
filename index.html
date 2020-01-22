@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Homework 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <!-- * The user arrives at the landing page and is presented with a call-to-action to "Start Quiz."
+    Also note the navigation option to "View Highscores" and the "Time" value set at 0.
+
+    * Clicking the "Start Quiz" button presents the user with a series of questions.
+    The timer is initialized with a value and immediately begins countdown.
+
+    * Score is calculated by time remaining. Answering quickly and correctly results in a higher score.
+    Answering incorrectly results in a time penalty (for example, 15 seconds are subtracted from time remaining).
+
+    * When time runs out and/or all questions are answered,
+    the user is presented with their final score and asked to enter their initials.
+    Their final score and initials are then stored in `localStorage`.
+
+    * Your application should also be responsive, ensuring that it adapts to multiple screen sizes.
+
+//Start Game State
+1. Text/Desc. for what the quiz is
+2. Start Quiz Button
+3. View High Scores Button
+4. Timer
+       -->
+
+    <a href="high-score.html">High Scores</a>
+
+    <h1>Coding Quiz Challenge</h1>
+    <h4>
+      Try to answer the following code-related questions within the time limit.
+      Keep in mind that incorrect answers will penalize your score/time by ten
+      seconds!
+    </h4>
+    <a class="btn btn-primary" href="quiz.html" role="button">Start Quiz</a>
+  </body>
+</html>
